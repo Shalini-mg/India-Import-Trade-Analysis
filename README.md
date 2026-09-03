@@ -243,7 +243,8 @@ The box plot shows a highly right-skewed distribution with several extreme high-
 
 A log transformation was applied for visualization to reduce the effect of extreme values and make the distribution easier to interpret.
 
-![Log Transformed Import Value Distribution](images/02_log_import_value_distribution.png)
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/6a5a432c-51d1-4717-a913-6356d3527d68" />
+
 
 ### Interpretation
 
@@ -255,7 +256,8 @@ The log-transformed distribution provides a clearer view of the concentration of
 
 Yearly import values were calculated to understand changes in India's import activity over time.
 
-![Total Import Value by Year](images/03_yearly_import_value.png)
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/2871e01d-a613-401a-b3da-053ec1fbac69" />
+
 
 ### Key Values
 
@@ -287,7 +289,8 @@ The unusually low recorded value for **2025 requires further validation and inve
 
 The top importing partner countries were identified based on their total import value.
 
-![Top 10 Import Countries](images/04_top_import_countries.png)
+<img width="1089" height="590" alt="image" src="https://github.com/user-attachments/assets/f8707824-0d19-4f27-8f57-155c868ec14f" />
+
 
 ### Interpretation
 
@@ -301,7 +304,8 @@ India's import value is concentrated among a relatively small number of major As
 
 The top commodities were ranked according to their total import value.
 
-![Top 10 Commodities](images/05_top_commodities.png)
+<img width="1189" height="690" alt="image" src="https://github.com/user-attachments/assets/a6cfa83f-20a2-4b87-a279-0dc838f7e404" />
+
 
 ### Key Findings
 
@@ -330,7 +334,8 @@ The categories **"Other"** and **"Others"** are source-level categories and shou
 
 Import value was compared across the measurement units present in the dataset.
 
-![Unit-wise Import Value](images/06_unit_wise_import_value.png)
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/6110cf05-e46d-415f-b74f-cfc22918ce52" />
+
 
 ### Interpretation
 
@@ -344,7 +349,8 @@ This comparison represents trade value grouped by measurement unit rather than a
 
 Import activity was compared across the major Asian trade subregions.
 
-![Import Value by Trade Subregion](images/07_trade_subregion_import_value.png)
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/d30a0a52-5c8a-417a-b847-95e5fc44b3a8" />
+
 
 ### Interpretation
 
@@ -358,7 +364,8 @@ This indicates that India's import activity is geographically concentrated rathe
 
 A multivariate analysis was performed to compare the yearly import-value trends of the five leading import countries.
 
-![Top 5 Countries Yearly Import Value](images/08_top_5_countries_yearly.png)
+<img width="1189" height="690" alt="image" src="https://github.com/user-attachments/assets/8f8772da-f6ea-4043-a88b-a16816e7b018" />
+
 
 ### Interpretation
 
@@ -569,8 +576,5 @@ https://drive.google.com/drive/folders/1ubNIe9UiA2nrQRK05bcI3WxPotdp2QEP?usp=dri
 
 **Shalini Murugan**
 
-Aspiring Data Analyst | Python | SQL | Power BI | Excel
+Data Analyst | Python | SQL | Power BI | Excel
 
-
-
-Aspiring Data Analyst | Python | SQL | Power BI | Excel
