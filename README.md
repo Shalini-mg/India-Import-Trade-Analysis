@@ -1,4 +1,4 @@
-# 🇮🇳 India Import Trade Analysis (2015–2025)
+# India Import Trade Analysis (2015–2025)
 
 ## 📌 Project Summary
 
@@ -230,7 +230,8 @@ Extreme values were not automatically removed because they may represent genuine
 
 The box plot was used to examine the spread, distribution, and extreme values of import value.
 
-![Import Value Box Plot](images/01_import_value_boxplot.png)
+<img width="990" height="490" alt="image" src="https://github.com/user-attachments/assets/ae150694-5f8c-40c6-955e-89b4ca8737a0" />
+
 
 ### Interpretation
 
