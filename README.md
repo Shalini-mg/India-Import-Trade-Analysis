@@ -67,7 +67,7 @@ The analysis is primarily based on `value_rs`, representing import value in Indi
 The original dataset is not included in this repository because of its large file size.
 
 **Dataset Link:**  
-PASTE YOUR DATASET LINK HERE
+https://drive.google.com/drive/folders/1ubNIe9UiA2nrQRK05bcI3WxPotdp2QEP?usp=drive_link
 
 ---
 
@@ -552,12 +552,6 @@ The PDF documentation provides a structured explanation of the project, methodol
 
 The `images` folder contains the eight final project visualizations displayed throughout this README.
 
-### 📊 Raw Dataset
-
-The raw dataset is not stored in the repository because of its large size.
-
-**Dataset Access:**  
-https://drive.google.com/drive/folders/1ubNIe9UiA2nrQRK05bcI3WxPotdp2QEP?usp=drive_link
 
 ---
 
