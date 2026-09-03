@@ -1,14 +1,26 @@
-# India Import Trade Analysis
+# 🇮🇳 India Import Trade Analysis (2015–2025)
 
-## Project Overview
+## 📌 Project Summary
 
-This project analyzes India's import trade with Asian countries from 2015 to 2025 using Python. The analysis focuses on identifying major import partners, high-value commodities, yearly trade trends, regional patterns and variations in import values.
+This project analyzes India's import trade with Asian countries from 2015 to 2025 using Python. The analysis focuses on identifying major import partners, high-value commodities, yearly trade trends, regional patterns, and variations in import values.
 
-The project includes data exploration, cleaning, transformation, feature engineering, statistical analysis and data visualization.
+The project covers:
+
+- Exploratory Data Analysis (EDA)
+- Data Cleaning and Preprocessing
+- Data Transformation
+- Feature Engineering
+- Statistical Analysis
+- Data Visualization
+- Pattern Identification
+- Insights and Interpretation
+- Decision Support
+
+The analysis is primarily based on `value_rs`, representing import value in Indian Rupees.
 
 ---
 
-## Project Objectives
+## 🎯 Project Objectives
 
 - Identify major importing countries based on import value and trade activity.
 - Identify major commodities contributing to India's imports.
@@ -19,20 +31,29 @@ The project includes data exploration, cleaning, transformation, feature enginee
 
 ---
 
-## Dataset
+## 📊 Dataset
 
-- Source: India Data Portal
-- Period: 2015–2025
-- Region: Asian Countries
-- Initial Records: 3,188,530
-- Final Records After Cleaning: 3,188,475
-- Original Columns: 15
-- Final Columns After Feature Engineering: 21
+**Source:** India Data Portal  
+**Trade Type:** Import Trade  
+**Region:** Asian Countries  
+**Period:** 2015–2025
 
-Key variables include:
+### Dataset Overview
 
-- Country
-- Trade Region and Subregion
+| Description | Details |
+|---|---:|
+| Initial Records | 3,188,530 |
+| Final Records After Cleaning | 3,188,475 |
+| Original Columns | 15 |
+| Final Columns | 21 |
+| Region | Asia |
+| Period | 2015–2025 |
+
+### Key Variables
+
+- Country Name
+- Trade Region
+- Trade Subregion
 - Commodity
 - HS Code
 - Measurement Unit
@@ -41,9 +62,16 @@ Key variables include:
 - Import Value in Dollars
 - Date
 
+### Dataset Access
+
+The original dataset is not included in this repository because of its large file size.
+
+**Dataset Link:**  
+PASTE YOUR DATASET LINK HERE
+
 ---
 
-## Tools and Technologies
+## 🛠️ Tools & Technologies
 
 - Python
 - Pandas
@@ -52,14 +80,6 @@ Key variables include:
 - Seaborn
 - Google Colab
 - GitHub
-
----
-### 📂 Dataset Access
-
-The original dataset is not included in this repository because of its large file size.
-
-**Dataset Link:**  
-(https://drive.google.com/drive/folders/1ubNIe9UiA2nrQRK05bcI3WxPotdp2QEP?usp=drive_link)
 
 ---
 
@@ -90,23 +110,21 @@ Decision Support
       ↓
 Documentation
 
----
 🔍 Exploratory Data Analysis
 
-The dataset was initially explored to understand its structure and identify important data-quality issues.
+The dataset was initially explored to understand its structure, quality, and important characteristics.
 
-The following checks were performed:
-
+EDA Performed
 Dataset dimensions
 Column names
 Data types
-Missing values
-Duplicate records
-Unique values
+Missing-value analysis
+Duplicate checks
+Unique-value analysis
 Country distribution
 Commodity distribution
-Measurement units
-Date range
+Measurement-unit analysis
+Date-range analysis
 Import-value distribution
 Descriptive statistics
 
@@ -116,60 +134,60 @@ A total of 55 records with missing measurement units were identified and removed
 
 The final cleaned dataset contained 3,188,475 records.
 
----
 🧹 Data Cleaning & Preprocessing
-
-The following data-cleaning steps were performed:
-
 Missing Values
 
 Missing values were checked across the dataset.
 
-The 55 records with missing unit values were removed.
-
+55 records contained missing measurement-unit values.
+These records were removed.
+The remaining dataset contained 3,188,475 records.
 Duplicate Records
 
-Duplicate records were checked after loading and cleaning the dataset.
+Duplicate records were checked after loading and cleaning.
 
 No duplicate records remained in the final cleaned dataset.
-
 Country Name Standardization
 
 Country names were reviewed and standardized where required.
 
-For example:
+Example:
 
 Türkiye → Turkey
+
 Date Transformation
 
 The date column was converted into an appropriate date format.
 
-Additional time-based features such as year and month were created for further analysis.
+Additional time-based features such as Year and Month were created for time-series analysis.
 
 Quantity Handling
 
-The value_qt column contains multiple measurement units.
+The value_qt column contains multiple measurement units such as Kgs, Nos, Sqm, and others.
 
-Therefore, quantities across different units were not directly combined because values measured in Kgs, Nos, Sqm, etc. are not directly comparable.
+Therefore, quantities across different units were not directly aggregated, because these units measure different physical quantities.
 
-The analysis therefore focuses primarily on value_rs, the import value in Indian Rupees.
+The analysis therefore focuses primarily on:
 
----
+value_rs → Import Value in Indian Rupees
 
 ⚙️ Feature Engineering
 
 Additional features were created to support time-based and analytical comparisons.
 
-The main engineered features include:
-
+Features Created
 Year
 Month
-Additional helper columns used for statistical analysis and visualization
+Additional helper columns for statistical analysis and visualization
 
-These features enabled yearly trend analysis and comparisons across countries, commodities, and trade subregions.
----
+These features enabled comparisons across:
 
-📈 Statistical Analysis
+Years
+Countries
+Commodities
+Measurement Units
+Trade Subregions
+📐 Statistical Analysis
 
 Statistical analysis was performed primarily on the value_rs variable.
 
@@ -184,14 +202,13 @@ Kurtosis	11,190.26
 Interpretation
 The mean is much higher than the median, showing that a relatively small number of high-value records strongly influence the average.
 The mode is ₹0, indicating that zero-value records occur frequently.
-The high standard deviation indicates substantial variation in import values.
-The very high positive skewness indicates a strong right-skewed distribution with a long upper tail.
+The high standard deviation indicates substantial variation in individual import values.
+The very high positive skewness indicates a strongly right-skewed distribution with a long upper tail.
 The high kurtosis indicates the presence of extreme observations.
 
 Extreme values were not automatically removed because they may represent genuine high-value trade transactions.
----
 
-📊 Data Visualizations & Findings
+📈 Data Visualizations & Findings
 1. Import Value Box Plot
 
 The box plot was used to examine the spread, distribution, and extreme values of import value.
@@ -227,7 +244,7 @@ Year	Import Value
 2025	₹3.30M
 Interpretation
 
-India's total import value generally increased from 2015 and reached its highest level in 2022 at approximately ₹349.15 million.
+India's total import value generally increased from 2015 and reached its highest recorded level in 2022 at approximately ₹349.15 million.
 
 Import value declined during 2023 and 2024.
 
@@ -263,7 +280,7 @@ Monolithic Integrated Circuits – Digital
 Crude Palm Oil and its Fractions
 Interpretation
 
-Import value is concentrated among a relatively small number of high-value commodities, particularly petroleum and energy-related products.
+Import value is concentrated among a relatively small number of high-value commodity categories, particularly petroleum and energy-related products.
 
 The categories "Other" and "Others" are source-level categories and should not be interpreted as specific commodity types.
 
@@ -285,7 +302,7 @@ Interpretation
 
 Import value varies considerably across Asian trade subregions, with some subregions contributing substantially more to India's total import value than others.
 
-This indicates that India's import activity is geographically concentrated rather than evenly distributed across Asian subregions.
+This indicates that India's import activity is geographically concentrated rather than evenly distributed across Asian trade subregions.
 
 8. Yearly Import Value of Top 5 Import Countries
 
@@ -300,7 +317,6 @@ China's import value increased from approximately ₹39.22 million in 2015 to a 
 The United Arab Emirates also showed strong import values, reaching approximately ₹38.43 million in 2024.
 
 The five countries show an unusually sharp decline in recorded value in 2025, consistent with the overall yearly pattern. This should be investigated further.
----
 
 💡 Key Insights
 1. Import Value Increased Over Time
@@ -330,11 +346,12 @@ Import activity varies considerably across Asian trade subregions and is concent
 7. 2025 Requires Further Investigation
 
 The recorded import value for 2025 is substantially lower than previous years despite a substantial number of trade records. This unusual pattern should be validated before using 2025 for long-term trend conclusions.
----
-
 
 🧠 Types of Analysis Performed
 Descriptive Analysis
+
+The following descriptive techniques were used:
+
 Dataset structure and dimensions
 Missing-value analysis
 Duplicate checks
@@ -373,7 +390,6 @@ Prescriptive Analysis
 Formal optimization modelling was not performed.
 
 However, the findings provide decision-support recommendations for monitoring major countries, commodities, trade trends, and unusual values.
----
 
 🎯 Decision Support
 
@@ -387,8 +403,6 @@ Examine extreme observations before making business decisions.
 Validate unusual periods such as 2025.
 Focus trade analysis on major countries and commodities.
 Identify geographically concentrated import activity.
----
-
 ⚠️ Limitations
 The analysis is based on the available India Data Portal dataset.
 Quantity values use different measurement units and therefore cannot be directly aggregated across all records.
@@ -397,7 +411,3 @@ Extreme values were retained because they may represent genuine transactions.
 The categories "Other" and "Others" are source-level commodity categories.
 The unusually low recorded value in 2025 requires further validation.
 The project focuses on descriptive and diagnostic analytics rather than predictive modelling.
----
-
-
-
